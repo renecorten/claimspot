@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <!-- Head -->
+    <div class="border-b-2 border-orange-400 bg-indigo-100 px-10 py-4">
+      <h1 class="text-2xl">claimspot.</h1>
+    </div>
+
+    <!-- Main -->
+    <div
+      id="alerts_container"
+      class="grid grid-cols-3 gap-10 bg-slate-200 p-10"
+    ></div>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="flex w-full items-center justify-between bg-indigo-100 px-10 py-6"
+      >
+        <p class="font-bold">claimspot. not another claim tool...</p>
+        <ul class="flex gap-4">
+          <li><a href="#">KONTAKT</a></li>
+          <li><a href="#">IMPRESSUM</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Template -->
+  <template id="alert_template">
+    <div class="flex flex-col rounded-lg bg-slate-100 shadow-lg">
+      <div id="alert_props" class="flex w-full justify-between">
+        <span
+          id="alert_type"
+          class="m-4 rounded-lg bg-red-200 px-2 text-sm font-bold text-red-800"
+          >BRAND</span
+        >
+        <span id="alert_date" class="m-4 text-sm">DATUM</span>
+      </div>
+      <div>
+        <h1 id="alert_title" class="mb-2 ml-4 min-h-14 text-lg"></h1>
+        <p id="alert_info" class="mx-4 min-h-20"></p>
+      </div>
+      <div
+        class="mx-4 mb-4 mt-8 flex justify-between font-bold text-indigo-800 hover:text-indigo-900"
+      >
+        <a id="alert_link" class="flex items-center gap-2" href=""
+          >Zur Meldung</a
+        >
+        <a href="">Schaden anlegen</a>
+      </div>
+    </div>
+  </template>
+
+  <!-- Script -->
+  <script type="module" src="src/main.js"></script>
+</html>
